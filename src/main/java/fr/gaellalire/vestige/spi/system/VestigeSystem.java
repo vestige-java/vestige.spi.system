@@ -46,6 +46,11 @@ public interface VestigeSystem {
 
     void setIn(InputStream in);
 
+    /**
+     * @since 1.1
+     */
+    URLStreamHandlerFactory getURLStreamHandlerFactory();
+
     void setURLStreamHandlerFactory(URLStreamHandlerFactory urlStreamHandlerFactory);
 
     void setURLStreamHandlerForProtocol(String protocol, URLStreamHandler urlStreamHandler);
